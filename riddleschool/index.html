@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="Riddle School is a puzzle-based adventure game focused on problem-solving.
+    Explore levels, find clues, and complete challenges easily online.">
+    <title>Riddle School</title>
+    <link rel="icon" type="image/x-icon" href="riddleschool.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="riddleschool.png" />
+  </head>
+  <body>
+    <script src="/js/main.js"></script>
+    <div id="ruffle" width="100%" height="100%"></div>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("riddleschool.swf");
+      });
+    </script>
+  </body>
+</html>
