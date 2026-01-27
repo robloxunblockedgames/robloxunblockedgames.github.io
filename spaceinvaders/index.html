@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="Space Invaders is a classic arcade game with simple mechanics and retro visuals.
+    Enjoy timeless gameplay directly in your browser.">
+  <title>Space Invaders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- We use canvas to draw stuff on the screen. -->
+  <canvas id="game-canvas" width="672" height="768">
+    Your browser does not support HTML5 canvas.
+  </canvas>
+  <script src="game.js"></script>
+  <script>
+    var spaceInvaders = new SpaceInvaders.Game();
+    spaceInvaders.start();
+  </script>
+</body>
+</html>
